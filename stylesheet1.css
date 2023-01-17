@@ -60,7 +60,7 @@ body{
 .nav-content-p{
     color: white;
     font-family: serif;
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 0px 0px 5px red;
 }
 
@@ -97,10 +97,25 @@ img{
 }
 
 .b-card-container{
-    margin: 2%;
+    margin: 10px;
     transition: transform .3s;
 }
 
+
+@media screen and (max-width: 750px) {
+    img{
+        width: 300px;
+        height: 266px;
+        border-radius: 20px 10px 0px 0px;
+    }
+    
+    .card-source-content{
+        background-color: blue;
+        width: 300px;
+        padding: 10px;
+    }
+
+}
 .b-card-container:hover{
     transform: scale(1.02);
     text-shadow: 1px 1px 10px;
