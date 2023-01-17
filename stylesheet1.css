@@ -1,0 +1,109 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(58, 201, 201,0.1);
+}
+
+.nav-main-container{
+    background-image: url(ece3.jpg);
+    height: 20vh;
+    background-size: cover;
+
+}
+
+.nav-main-container-cse{
+    background-image: url(cse1.jpg);
+    height: 20vh;
+    background-size: cover;
+
+}
+
+.nav-main-container-mech{
+    background-image: url(mech1.jpg);
+    height: 20vh;
+    background-size: cover;
+}
+
+.nav-main-container-eee{
+    background-image: url(eee.jpg);
+    height: 20vh;
+    background-size: cover;
+}
+
+.nav-main-container-bme{
+    background-image: url(bme.jpg);
+    height: 20vh;
+    background-size: cover;
+}
+
+.nav-main-container-civil{
+    background-image: url(civil1.jpg);
+    height: 20vh;
+    width: 100wh;
+    background-size:cover ;
+    background-repeat:no-repeat;
+}
+
+
+.nav-container{
+    padding: 0px 0px 0px 20px;
+}
+.nav-content-h1{
+    color: white;
+    font-size: 3em;
+    font-family: serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px blue;
+}
+
+.nav-content-p{
+    color: white;
+    font-size: 1.5em;
+    font-family: serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px red;
+}
+
+.mech-content-container{
+    margin: 10% 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* @@@@@@@@@@@@ card styling @@@@@@@@@@@@@@@@@ */
+
+.card-img{
+
+}
+
+img{
+    width: 400px;
+    height: 266px;
+    border-radius: 20px 10px 0px 0px;
+}
+
+.card-source-content{
+    background-color: blue;
+    width: 400px;
+    padding: 10px;
+}
+
+.card-source-content-p{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.b-card-container{
+    margin: 2%;
+    transition: transform .3s;
+}
+
+.b-card-container:hover{
+    transform: scale(1.02);
+    text-shadow: 1px 1px 10px;
+    box-shadow: 0px 0px 20px;
+}

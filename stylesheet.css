@@ -1,0 +1,147 @@
+body{
+   background-color: rgba(58, 201, 201,0.1);
+   margin: 0px;
+   padding: 0px;
+}
+
+/* @@@@@@@@@@@@ nav related @@@@@@@@@@@@@@@@ */
+
+.nav-container{
+    background-image: url(navimage.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10%;
+}
+
+.nav-content{
+    padding: 20px;
+    max-width: 60%;
+}
+
+.nav-content-h1{
+    font-family: 'Tangerine', serif;
+    color: white;
+    font-size: 6.5em;
+    font-weight: 800;
+    text-shadow: 1px 1px 10px;
+}
+
+
+.nav-content-p{
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 800;
+    text-shadow: 0px 0px 5px red;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 840px) {
+    .nav-content{
+        padding: 20px;
+        max-width: 100%;
+    }
+
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@ branch cards styling @@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.main-b-container{
+    width: 80%;
+    margin: 0px auto;
+}
+.b-container{
+    margin: 10px 10px;
+}
+
+.b-container1,.b-container2,.b-container3,.b-container4,.b-container5,.b-container6{
+    height:350px;
+    width: 50vw;
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform .3s;
+}
+
+
+.b-container1{
+    background-image: url(ece1.jpg);
+}
+
+.b-container1:hover,.b-container2:hover,.b-container3:hover,.b-container4:hover,.b-container5:hover,.b-container6:hover{
+    transform: scale(1.02);
+    text-shadow: 1px 1px 10px;
+    box-shadow: 0px 0px 20px;
+}
+
+.b-container2{
+    background-image: url(civil1.jpg);
+}
+
+.b-container3{
+    background-image: url(eee.jpg);
+}
+
+.b-container4{
+    background-image: url(bme.jpg);
+}
+
+.b-container5{
+    background-image: url(cse.jpg);
+}
+
+.b-container6{
+    background-image: url(mech.jpg);
+}
+
+.content-container{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 3px 0px;
+    text-align: center;
+}
+
+.content-container p{
+    font-weight: 700;
+}
+
+.content-container h1{
+    color: rgba(130, 185, 212);
+}
+
+
+@media screen and (max-width: 750px) {
+    .main-b-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .b-container1,.b-container2,.b-container3,.b-container4,.b-container5,.b-container6{
+        height: 350px;
+        width: 400px;
+        background-size: contain;
+        border-radius: 10px;
+        transition: transform .3s;
+    }
+}
+
+/* ############### Footer styling ############## */
+
+.main-container{
+    background-image: url(footer.jpg);
+    height: 10vh;
+    width: 100wh;
+    background-size: cover;
+}
+
+.f-content-p,.f-content-p a,.f-content-h5{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgba(58, 201, 201,0.1);
+    text-shadow: 0px 0px 5px red;
+}
