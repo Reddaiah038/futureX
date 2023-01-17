@@ -1,68 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheet1.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECE</title>
-</head>
-<body>
-    <!-- @@@@@@@ nav related @@@@@@@ -->
-    <nav class="nav-main-container">
-        <div class="nav-container">
-            <h1 class="nav-content-h1">ECE</h1>
-            <p class="nav-content-p">Electronics and Communication Engineering</p>
-        </div>
-    </nav>
 
-    <!-- @@@@@@@ card related @@@@@@@@@ -->
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(58, 201, 201,0.1);
+}
 
-    <div class="card-main-container d-flex flex-wrap justify-content-center" >
-        <div class="b-card-container" id="embd">
-            <div class="card-img">
-                <img src="embd.jpg" alt="" >
-            </div>
-            <div class="card-source-content">
-                <p class="card-source-content-p">Embedded system</p>
-            </div>
-        </div>
+.nav-main-container{
+    background-image: url(ece3.jpg);
+    height: 20vh;
+    background-size: cover;
 
-        <div class="b-card-container"id="vlsi">
-            <div class="card-img">
-                <img src="vlsi.jpg" alt="" >
-            </div>
-            <div class="card-source-content">
-                <p class="card-source-content-p">VLSI</p>
-            </div>
-        </div>
-    </div>
+}
 
-    <div class="card-main-container d-flex flex-wrap justify-content-center">
+.nav-main-container-cse{
+    background-image: url(cse1.jpg);
+    height: 20vh;
+    background-size: cover;
 
-        <div class="b-card-container" id="iot" >
-            <div class="card-img">
-                <img src="iot.jpg" alt="" >
-            </div>
-            <div class="card-source-content">
-                <p class="card-source-content-p">IOT</p>
-            </div>
-        </div>
+}
 
-        <div class="b-card-container" id="ic">
-            <div class="card-img">
-                <img src="ic.jpg" alt="" >
-            </div>
-            <div class="card-source-content">
-                <p class="card-source-content-p">IC design</p>
-            </div>
-        </div>
-    </div>
+.nav-main-container-mech{
+    background-image: url(mech1.jpg);
+    height: 20vh;
+    background-size: cover;
+}
 
-    <script src="js_ece.js"></script>
-</body>
-</html>
+.nav-main-container-eee{
+    background-image: url(eee.jpg);
+    height: 20vh;
+    background-size: cover;
+}
+
+.nav-main-container-bme{
+    background-image: url(bme.jpg);
+    height: 20vh;
+    background-size: cover;
+}
+
+.nav-main-container-civil{
+    background-image: url(civil1.jpg);
+    height: 20vh;
+    width: 100wh;
+    background-size:cover ;
+    background-repeat:no-repeat;
+}
+
+
+.nav-container{
+    padding: 0px 0px 0px 20px;
+}
+.nav-content-h1{
+    color: white;
+    font-size: 3em;
+    font-family: serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px blue;
+}
+
+.nav-content-p{
+    color: white;
+    font-family: serif;
+    font-weight: 500;
+    text-shadow: 0px 0px 5px red;
+}
+
+.mech-content-container{
+    margin: 10% 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* @@@@@@@@@@@@ card styling @@@@@@@@@@@@@@@@@ */
+
+.card-img{
+
+}
+
+img{
+    width: 400px;
+    height: 266px;
+    border-radius: 20px 10px 0px 0px;
+}
+
+.card-source-content{
+    background-color: blue;
+    width: 400px;
+    padding: 10px;
+}
+
+.card-source-content-p{
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.b-card-container{
+    margin: 10px;
+    transition: transform .3s;
+}
+
+
+@media screen and (max-width: 700px) {
+    img{
+        width: 200px;
+        height: 190px;
+        border-radius: 20px 10px 0px 0px;
+    }
+    
+    .card-source-content{
+        background-color: blue;
+        width: 200px;
+        padding: 10px;
+    }
+
+}
+.b-card-container:hover{
+    transform: scale(1.02);
+    text-shadow: 1px 1px 10px;
+    box-shadow: 0px 0px 20px;
+}
